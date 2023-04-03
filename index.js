@@ -16,25 +16,25 @@ function destructivelyRemoveLastCat(){
 function destructivelyRemoveFirstCat(){
     cats.shift();
 }
-
+//Nondestructive append cat
 function appendCat(name){
     const newCats = [...cats];
     newCats.push(name);
     return newCats;
 }
-
+//Nondestructively prepend cat
 function prependCat(name){
     const newCat = [...cats];
     newCat.unshift(name);
     return newCat;
 }
-
+//Nondestructively remove last cat
 function removeLastCat(){
     const newsCats = [...cats];
     newsCats.pop();
     return newsCats;
 }
-
+//Nondestructively remove first cat
 function removeFirstCat(){
     const newsCat = [...cats];
     newsCat.shift();
